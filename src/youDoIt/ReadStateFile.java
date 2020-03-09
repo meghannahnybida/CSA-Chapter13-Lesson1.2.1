@@ -6,7 +6,7 @@ import java.nio.file.attribute.*;
 import static java.nio.file.StandardOpenOption.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.util.Formatter;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 public class ReadStateFile
 {
@@ -16,7 +16,7 @@ public class ReadStateFile
         String fileName;
         System.out.print("Enter name of file to use >> ");
         fileName = input.nextLine();
-        fileName = "C:\\Users\\mn145140\\Desktop\\CSA\\Chapter-Thirteen\\src\\youDoIt\\" + fileName;
+        fileName = "C:\\Users\\mn145140\\Desktop\\CSA\\Chapter13-Lesson1.2\\src\\youDoIt\\InStateCusts.txt" + fileName;
         Path file = Paths.get(fileName);
         final String ID_FORMAT = "000";
         final String NAME_FORMAT = "          ";
@@ -62,8 +62,8 @@ public class ReadStateFile
                 }
                 s = reader.readLine();
             }
-            Formatter formatter = new Formatter();
-            System.out.println("Total of all balances is $" + formatter.format("%.2f", total));
+            DecimalFormat df = new DecimalFormat("0000.00");
+            System.out.println("Total of all balances is $" + df.format(total));
             reader.close();
         }
         catch(Exception e)

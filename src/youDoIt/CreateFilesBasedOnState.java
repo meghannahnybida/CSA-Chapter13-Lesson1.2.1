@@ -16,11 +16,11 @@ public class CreateFilesBasedOnState
     {
         Scanner input = new Scanner(System.in);
         Path inStateFile =
-                Paths.get("C:\\Users\\mn145140\\Desktop\\CSA\\Chapter-Thirteen\\src\\youDoIt\\InStateCusts.txt");
+                Paths.get("C:\\Users\\mn145140\\Desktop\\CSA\\Chapter13-Lesson1.2\\src\\youDoIt\\InStateCusts.txt");
         Path outOfStateFile =
-                Paths.get("C:\\Users\\mn145140\\Desktop\\CSA\\Chapter-Thirteen\\src\\youDoIt\\OutOfStateCusts.txt");
+                Paths.get("C:\\Users\\mn145140\\Desktop\\CSA\\Chapter13-Lesson1.2\\src\\youDoIt\\OutOfStateCusts.txt");
         final String ID_FORMAT = "000";
-        final String NAME_FORMAT = "            ";
+        final String NAME_FORMAT = "          ";
         final int NAME_LENGTH = NAME_FORMAT.length();
         final String HOME_STATE = "WI";
         final String BALANCE_FORMAT = "0000.00";

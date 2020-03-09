@@ -15,3 +15,10 @@ This method places the initial  text on the file, which in this case is 1000 pla
 catch block is in the program, which is where the user enters data. Next, the file channels open the file, which allows the data the user enters to be written in the placeholders in
 the text files, however it doesn't actually place the user entries there yet, the ByteBuffer helps with this.The buffer transfers the bytes from the file channels to the actual file. After
 this, the catch statement is there to catch any possible errors. That is how text is written on the text files.  </p>
+
+<h1> Lesson 1.2.1 </h1>
+<p>#3: The first method is readString, it has no parameters and a return type of String. The method's purpose is to open the file (if needed),
+and then reads a line from the file, then return the line. The second method is writeString, it has the parameter String s and a return
+ type of void. The method's purpose is to open the file (if needed), and then writes a string to the file, writing a new line. The last
+ method is saveAndClose, it has no parameters and a return type of void. The method's purpose is to save and close the file when it is
+ opened for input or output.</p>
