@@ -31,6 +31,21 @@ public class MediaLib
         totalCost = totalCost + song2.getPrice();
         totalRating = totalRating + song2.getRating();
 
+        Song song8 =  new Song("Physical", .99, 9);
+        numSongs = numSongs + 1;
+        totalCost = totalCost + song8.getPrice();
+        totalRating = totalRating + song8.getRating();
+
+        Song song9 =  new Song("You Light Up My Life", 1.29, 10);
+        numSongs = numSongs + 1;
+        totalCost = totalCost + song9.getPrice();
+        totalRating = totalRating + song9.getRating();
+
+        Song song10 =  new Song("Hey Jude", .99, 9);
+        numSongs = numSongs + 1;
+        totalCost = totalCost + song10.getPrice();
+        totalRating = totalRating + song10.getRating();
+
         Song song3 =  new Song("Mack the Knife", 1.29, 8);
         numSongs = numSongs + 1;
         totalCost = totalCost + song3.getPrice();
@@ -56,20 +71,6 @@ public class MediaLib
         totalCost = totalCost + song7.getPrice();
         totalRating = totalRating + song7.getRating();
 
-        Song song8 =  new Song("Physical", .99, 9);
-        numSongs = numSongs + 1;
-        totalCost = totalCost + song8.getPrice();
-        totalRating = totalRating + song8.getRating();
-
-        Song song9 =  new Song("You Light Up My Life", 1.29, 10);
-        numSongs = numSongs + 1;
-        totalCost = totalCost + song9.getPrice();
-        totalRating = totalRating + song9.getRating();
-
-        Song song10 =  new Song("Hey Jude", .99, 9);
-        numSongs = numSongs + 1;
-        totalCost = totalCost + song10.getPrice();
-        totalRating = totalRating + song10.getRating();
 
         MediaFile.writeString(song1.getTitle() + delmiter + song1.getRating());
         MediaFile.writeString(song2.getTitle() + delmiter + song2.getRating());
@@ -82,14 +83,6 @@ public class MediaLib
         MediaFile.writeString(song9.getTitle() + delmiter + song9.getRating());
         MediaFile.writeString(song10.getTitle() + delmiter + song10.getRating());
         MediaFile.saveAndClose();
-
-
-        String songInfo = MediaFile.readString();
-
-        while(songInfo != null){
-            System.out.println("From File: " + songInfo);
-            songInfo = MediaFile.readString();
-        }
 
         /**** test code is commented out
          double testVal = 109.41;
