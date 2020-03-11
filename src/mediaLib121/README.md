@@ -22,3 +22,5 @@ and then reads a line from the file, then return the line. The second method is 
  type of void. The method's purpose is to open the file (if needed), and then writes a string to the file, writing a new line. The last
  method is saveAndClose, it has no parameters and a return type of void. The method's purpose is to save and close the file when it is
  opened for input or output.</p>
+
+<p> Conclusion #2: Android OS 3.0 Honeycomb was created for tablets, it could support a larger screen size. Maintaining the older version of Gingerbread became pointless because it was not made to suppor tablets like Honeycomb was.  </p>
