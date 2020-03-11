@@ -16,11 +16,19 @@ catch block is in the program, which is where the user enters data. Next, the fi
 the text files, however it doesn't actually place the user entries there yet, the ByteBuffer helps with this.The buffer transfers the bytes from the file channels to the actual file. After
 this, the catch statement is there to catch any possible errors. That is how text is written on the text files.  </p>
 
+<p> Read State File working: <img src = "chapter13.PNG"> </p>
+
 <h1> Lesson 1.2.1 </h1>
 <p>#3: The first method is readString, it has no parameters and a return type of String. The method's purpose is to open the file (if needed),
 and then reads a line from the file, then return the line. The second method is writeString, it has the parameter String s and a return
  type of void. The method's purpose is to open the file (if needed), and then writes a string to the file, writing a new line. The last
  method is saveAndClose, it has no parameters and a return type of void. The method's purpose is to save and close the file when it is
  opened for input or output.</p>
+<p>#29: Personally, I would probably use a for loop because you can limit the amount of times the loop iterates in the first line
+  of the loop. I find them to be cleaner, and less chance of infinitely looping.</p>
 
+<p> Looping Media Lib working: <img src = "lesson121.PNG"> </p>
+<p>Conclusion #1: A for loop should be used when you know how many times the loop should iterate because in a for loop you state
+how many time the loop will iterate in the first line of the loop. A while loop should be used when you don't know how many times
+the loop should iterate, so it should loops on a condition until it needs to stop.</p>
 <p> Conclusion #2: Android OS 3.0 Honeycomb was created for tablets, it could support a larger screen size. Maintaining the older version of Gingerbread became pointless because it was not made to suppor tablets like Honeycomb was.  </p>
