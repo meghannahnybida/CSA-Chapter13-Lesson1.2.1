@@ -25,8 +25,7 @@ and then reads a line from the file, then return the line. The second method is 
  type of void. The method's purpose is to open the file (if needed), and then writes a string to the file, writing a new line. The last
  method is saveAndClose, it has no parameters and a return type of void. The method's purpose is to save and close the file when it is
  opened for input or output.</p>
-<p>#29: Personally, I would probably use a for loop because you can limit the amount of times the loop iterates in the first line
-  of the loop. I find them to be cleaner, and less chance of infinitely looping.</p>
+<p>#29: Personally, I would use a for loop because I know how many times that program needs to iterate already (100). I find them to be cleaner, and less chance of infinitely looping.</p>
 
 <p> Looping Media Lib working:</p>
 <p> <img src = "lesson121.PNG"> </p>
